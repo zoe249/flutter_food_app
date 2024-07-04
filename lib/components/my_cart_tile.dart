@@ -26,6 +26,7 @@ class MyCartTile extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // food image
                     ClipRRect(
@@ -76,7 +77,7 @@ class MyCartTile extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    padding: const EdgeInsets.only(left: 10, bottom: 10, right: 10),
+                    // padding: const EdgeInsets.only(left: 10, bottom: 10, right: 10),
                     children: cartItem.selectedAddons
                       .map((addon) => Padding(
                         padding: const EdgeInsets.only(right: 8.0),
