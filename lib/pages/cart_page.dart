@@ -14,7 +14,6 @@ class CartPage extends StatelessWidget {
       builder: (context, restaurant, child) {
         // cart 
         final userCart = restaurant.cart;
-
         return Scaffold(
           appBar: AppBar(
             title: const Text('Cart'),
